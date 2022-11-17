@@ -35,3 +35,5 @@ docker kill [option] container_id
 #stop all running containers
 docker stop $(docker ps –a –q)
 
+#build and run a container
+docker-compose up -d
