@@ -37,3 +37,9 @@ docker stop $(docker ps –a –q)
 
 #build and run a container
 docker-compose up -d
+
+# run commmand within a container
+docker exec -it pihole /bin/bash
+
+# changing pihole password
+pihole -a -p
