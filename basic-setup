@@ -3,6 +3,7 @@ docker swarm init --advertise-addr 192.168.1.11
 
 # rpi node 2
 docker swarm join --token $(docker swarm join-token -q worker) 192.168.1.11:2377
+docker swarm join --token SWMTKN-1-35t6ljnqhzi9sf2k6v8p8fnvhda8zmdvb49byj5y3ltrbc07ur-6wyci2599uyfn6b1mxucimuhd 192.168.1.11:2377
 
 # check status
 docker node ls
